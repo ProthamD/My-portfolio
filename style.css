@@ -1,0 +1,527 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+@keyframes glowing {
+    from {
+        text-shadow: 
+            0 0 4px rgba(255, 215, 0, 0.5), 
+            0 0 8px rgba(255, 215, 0, 0.3);
+    }
+    to {
+        text-shadow: 
+            0 0 6px rgba(255, 215, 0, 1),   /* Slightly brighter glow */
+            0 0 12px rgba(255, 215, 0, 0.6); /* Larger bright glow */
+    }
+}
+
+
+@keyframes glowing2 {
+    from {
+        text-shadow: 
+            0 0 5px rgba(0, 191, 255, 0.6), 
+            0 0 10px rgba(0, 191, 255, 0.4);
+    }
+    to {
+        text-shadow: 
+            0 0 10px rgba(0, 191, 255, 1),   /* Brighter glow */
+            0 0 20px rgba(0, 191, 255, 0.8); /* Larger brighter glow */
+    }
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-family: "Unbounded", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    overflow-x: hidden;
+    background-image: url(assets/lofi3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+
+
+
+main hr{
+    border: 0;
+    height: 1.2px;
+    /* margin: 40px 84px; */
+    margin-bottom: 40px;
+    margin-left: 84px;
+    margin-right: 84px;
+    background-color: white;
+    opacity: 0.8;
+
+}
+
+nav{
+
+    border-radius: 30px 30px 30px 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+    background-color: black;
+    text-shadow: 0 0 10px rgba(255,215,0,1), 0 0 20px rgba(155,165,0,0.9);
+    /* margin: 30px 0; */
+}
+
+
+nav ul{
+    display:flex;
+    justify-content: center;
+
+}
+
+nav ul li{
+    list-style: none;
+    /* gap: 10px; */
+    margin: 0 23px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover{
+    padding: 3px 4px;
+    border-bottom: 3px solid gray ;
+    border-radius: 0 0 10px 10px;
+}
+.left{
+    font-size: 1.5rem;
+}
+
+.upperborder{
+    border-top: 2px solid yellow;
+    border-top-right-radius: 30px; 
+    border-top-left-radius: 30px ;
+    margin-bottom: 120px;
+    height: 100vh;
+     /* border-radius: 10%; */
+}
+
+.up-1{
+    background-color: black;
+}
+
+.firstSection{
+    /* border-top: 2px solid yellow;
+    border-top-right-radius: 30px; 
+    border-top-left-radius: 30px ; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 120px 0;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    
+  
+
+}
+
+.secondSection{
+    height: 100vh;
+    width: 80vw;
+    margin: auto;
+
+}
+
+.secondSection > h1{
+    text-shadow: 0 0 10px rgba(255,215,0,0.8), 0 0 20px rgba(155,165,0,0.7);
+    font-size: 1.8rem;
+}
+
+/* .firstSection > div{
+    width:35%;
+   
+   
+} */
+
+/* .firstSection > .leftSection{
+    width: 60%;
+}
+
+.firstSection > .rightSection{
+    width: 40%;
+} */
+
+.leftSection {
+     /* background-color: red;  */
+    flex: 0 1 300px; /* Grow and shrink, with a base width of 300px */
+    min-width: 40%; /* Minimum width to allow wrapping */
+/* Optional padding for better spacing */
+
+    line-height: 2;
+
+    font-size: 1.5rem;
+    word-spacing: 10px;
+    margin: 30px 0;
+    
+ 
+}
+
+.leftSection h1{
+    text-shadow: 0 0 10px rgba(255,215,0,0.8), 0 0 20px rgba(155,165,0,0.7);
+}
+
+.leftSection .btn{
+    padding: 20px 29px;
+    background-image:  linear-gradient(to right, #4b0082, #800080); /* Darker purple gradient */;
+   font-size: 11px;
+   display: flex; /* Enable flexbox */
+   align-items: center; /* Center items vertically */
+   /* Add padding for better click area */
+
+    color: white;
+    border: 0px solid purple;
+    border-radius: 50px;
+    font-family: "Unbounded", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    position: relative;
+    margin: 13px 0;
+    transition: background 0.1s ease, transform 0.1s ease, box-shadow 0.1s ease; /* Smooth transitions */
+} 
+
+ .btn:hover{
+    background-image: linear-gradient(to right, #800080, #4b0082); /* Reverse gradient on hover */
+    transform: scale(1.05); /* Slightly enlarge the button */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3)
+} 
+
+/* .btn-1{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 7px;
+} */
+
+/* .leftSection .btn span img{
+    width: 30px;
+    height: auto; /* Maintains aspect ratio 
+    object-fit: contain;
+    border-radius: 5px;
+    mix-blend-mode: color-burn;
+    padding-right:2px ; }*/
+   
+    .button{
+        display: flex;
+        gap:10px;
+        margin: 20px 0;
+        cursor: pointer;
+
+    }
+
+    
+    .leftSection .btn span {
+        display: flex; /* Enable flexbox for span */
+        align-items: center; /* Center image and text vertically */
+    }
+    
+    .leftSection .btn span img {
+        width: 35px;
+        height: auto; /* Maintains aspect ratio */
+        object-fit: contain;
+        border-radius: 5px;
+        mix-blend-mode: color-burn;
+        margin-right: 5px; /* Space between image and text */
+    }
+    
+
+
+.yellow{
+    /* font-size: 48px; Set font size */
+    color: #FFD700; /* Yellow color */
+    font-style: italic;
+    text-shadow: 
+        0 0 4px rgba(255, 215, 0, 0.5),   /* Soft glow */
+        0 0 8px rgba(255, 215, 0, 0.3);   /* Larger soft glow */
+    
+    animation: glowing 1.5s infinite alternate;
+}
+
+.blue{
+    font-weight: 600;
+    /* color: #00BFFF; Bright ocean blue color */
+    text-shadow: 
+        0 0 5px rgba(0, 191, 255, 0.6),   /* Soft glow */
+        0 0 10px rgba(0, 191, 255, 0.4);  /* Larger soft glow */
+    
+    animation: glowing2 1.5s infinite alternate; /* Animation for glowing effect */
+
+}
+
+.text-grey{
+    color: yellow;
+}
+
+.rightSection{
+    flex: 0 1;
+    min-width: 200px;
+    width: 40%;
+    margin-right: 90px;
+}
+
+.glow{
+     /* Grow and shrink, with a base width of 300px */
+    width: max(100px,300px); /* Minimum width to allow wrapping */
+    height: auto;
+    box-shadow: 0 0 20px rgba(0, 0, 128, 0.6), /* Outer glow with dark blue */
+    0 0 40px rgba(0, 0, 255, 0.5); /* Inner glow with lighter blue */
+    transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
+    border-radius: 10px;
+    
+}
+
+.glow:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 128, 1), /* Intensified outer glow on hover */
+                0 0 60px rgba(0, 0, 255, 0.7); /* Intensified inner glow on hover */
+}
+
+.secondSection .box {
+    height: 2px;
+    width: min(80vw, 1200px); /* Prevents getting too wide on large screens */
+    background-color: gray;
+    margin: clamp(20px, 5vh, 56px) 0; /* Responsive margin */
+    display: flex;
+    justify-content: center;
+}
+
+
+.vertical {
+    height: 80vh; /* Height of the vertical line */
+    width: 1px; /* Width of the vertical line */
+    background-color: gray; /* Color of the vertical line */
+    position: relative; /* Position relative for absolute children */
+    margin: 30px 0;
+    box-shadow:   0 0 4px rgb(255, 226, 82),   /* Soft glow */
+    0 0 8px rgba(231, 200, 23, 0.84);
+}
+
+.horizontal {
+    height: 2px; /* Matching vertical line thickness */
+  width: clamp(100px, 20vw, 300px); /* Responsive width with min/max limits */
+  background-color: gray;
+  position: absolute;
+ 
+}
+
+.h-1{
+   position: absolute;
+   left: 500px;
+   top: -100%;
+   width: 300px;
+}
+
+.h-1 h1{
+    font-size: 2rem;
+    margin-bottom: 8px;
+    background-image: linear-gradient(to right, #ff7e5f, #feb47b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.h-2 h1{
+    font-size: 2rem;
+    margin-bottom: 8px;
+    background-image: linear-gradient(to right, #ff7e5f, #feb47b);
+
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.h-2{
+    position: absolute;
+    right: 500px;
+    top: -100px;
+    width: 300px;
+}
+
+
+/* Positioning horizontal li
+nes alternatively */
+.horizontal:nth-child(1) {  
+     top: 20%;
+    left: 0;
+    transform: translateX(-100%); /* Better positioning */ }
+
+.horizontal:nth-child(2) { top: 80%; }
+
+
+#first{
+    position: absolute;
+    top: 20%;
+    height: 80vh;
+    z-index: 0;
+    width: 100%;    
+    margin: 0;
+
+}
+
+.tenor-gif-embed{
+    position: absolute;
+    right: 70%;
+    top: -55px;
+    box-shadow: 0 0 30px rgba(0, 0, 128, 1), /* Intensified outer glow on hover */
+    0 0 60px rgba(0, 0, 255, 0.7); /* Intensified inner glow on hover */
+}
+   
+
+
+.img{
+    width: 200px;
+    max-height: 150px;
+    background-size: contain;
+    position: relative;
+    left: 70%;
+    top: -65px;
+    border-radius: 30px;
+    box-shadow: 0 0 30px rgba(0, 0, 128, 1), /* Intensified outer glow on hover */
+    0 0 60px rgba(0, 0, 255, 0.7); /* Intensified inner glow on hover */
+}
+
+.img:hover{
+    width: 85%;
+    transition: 0.8s;
+}
+
+footer{
+    border-top:2px solid yellow ;
+    border-radius: 90%;
+    background-image: linear-gradient(to right, #000000, #003366);
+
+    height: 200px;
+    margin-top: 70px ;
+    
+}
+
+footer .footer{
+    display: flex;
+   flex-direction: column;
+    margin: 23px 12px;
+    text-align: center;
+    align-items: center;
+}
+
+.footer-first{
+    width: 50vw;
+   
+    margin-bottom: 40px;
+    margin-top: 20px;
+    font-size: 1.7rem;
+    text-shadow: 
+        0 0 4px rgba(255, 215, 0, 0.5),   /* Soft glow */
+        0 0 8px rgba(255, 215, 0, 0.3);   /* Larger soft glow */
+    
+    animation: glowing 1.5s infinite alternate;
+}
+
+.footer-second{
+    width: 80%;
+   
+}
+
+.footer ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-shadow: 
+    0 0 5px rgba(255, 0, 0, 0.5),   /* Mild glow */
+    0 0 10px rgba(255, 0, 0, 0.5),  /* Slightly stronger glow */
+    0 0 15px rgba(255, 0, 0, 0.3);   /* Faded outer glow */
+}
+.footer ul:hover{
+    text-shadow: 
+    0 0 10px rgba(255, 0, 0, 1),   /* Stronger glow on hover */
+    0 0 20px rgba(255, 0, 0, 1),   /* More intense outer glow */
+    0 0 30px rgba(255, 0, 0, 0.5); /* Even larger outer glow */
+}
+
+footer .footer-rights{
+    text-align: center;
+    font-size: 11px;
+    color: gray;
+}
+
+.list {
+    display: flex; /* Enables flexbox layout */
+    align-items: center; /* Vertically centers items */
+    justify-content: flex-start; /* Aligns items to the start */
+    gap: 10px; /* Adds space between image and text */
+}
+
+.footer-img {
+    width: 20px; /* Fixed width for logos */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+.list div {
+    font-size: 16px; /* Sets font size for text */
+    margin-left: 5px; /* Adds space between image and text */
+}
+
+
+  /* Very small screens */
+  @media (max-width: 480px) {
+    .horizontal {
+      width: clamp(30px, 10vw, 100px);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .upperborder {
+     height: 100vh;/* Smaller on mobile */
+     width: 100%;
+    }
+    
+    #first{
+       height: 100dvh;
+       width: 100%;
+
+    }
+    
+    main hr{
+        margin-top: 30px;
+    }
+
+
+    .secondSection h1{
+        margin-top: 50px;
+    }
+    
+    .secondSection{
+        margin-top: 50px;
+    }
+    .horizontal {
+        width: clamp(50px, 15vw, 150px); /* Smaller on mobile */
+      }
+      
+      .secondSection .box {
+        width: 90vw; /* More width on mobile */
+      }
+  }
+
+  .inv-sep{
+    background-color: #000000;
+    height: 50px;
+  }
+
+  /* Small devices (phones, 600px and down) */

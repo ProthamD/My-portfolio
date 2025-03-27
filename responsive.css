@@ -1,0 +1,156 @@
+@media only screen and (max-width: 900px) {
+    
+    body{
+        min-width: 500px;
+
+    }
+
+
+    nav {
+        min-width: 100%;
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+    nav::before{
+        position: fixed;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .leftSection {
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .rightSection {
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .firstSection {
+        flex-direction: column;
+        margin: 60px 0;
+    }
+
+    .secondSection {
+        height: 100vh;
+        padding: 20px 0;
+    }
+
+    #orange{
+        width: 100px;
+        height: 100px;
+        position: relative;
+        left:29px;
+    }
+
+    .vertical {
+        height: 50vh;
+    }
+
+
+    .h-1{
+        font-size: 9px;
+        position: absolute;
+        left: 90px;
+        top: -110px;
+        width: 70px;
+    }
+ 
+    .h-2{
+        font-size: 9px;
+        position: absolute;
+        right: 90px;
+        top: -110px;
+        width: 90px;
+    } 
+
+
+
+    .h-1 h1, .h-2 h1 {
+        font-size: 0.8rem;
+    }
+
+ 
+
+    footer {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .footer-first {
+        font-size: 1.2rem;
+    }
+
+    .footer ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer ul li {
+        margin: 10px 0;
+    }
+
+    .contact-left p{
+        width: 100vw;
+    }
+    .contact-right{
+        max-width: 90%;
+    }
+}
+
+@media only screen and (max-width: 1300px){
+    .services-container{
+        min-width: 110px;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding: 5px;
+        border: 2px solid rgb(205, 12, 205);
+        background-color: black;
+        border-radius: 25px;
+    }
+
+    .service{
+        border: 3px solid rgb(205, 12, 205);
+    }
+    
+   .upperborder{
+    height: max(100vh,1500px);
+   } 
+    .description{
+        flex-wrap: wrap;
+        gap: 20px;
+
+
+    }
+
+    .abt-p{
+        margin-top: 20px;
+    }
+    .abt-img{
+        position: relative;
+        left: 16%;
+    
+    }
+    .abt-img img{
+        border-radius: 50%;
+    }
+
+    .contact-section{
+        flex-wrap: wrap;
+    }      
+    .contact-left h1{
+       
+        position: relative;
+        left: 23%;
+        font-size: 2.5rem;
+        
+    }    
+}

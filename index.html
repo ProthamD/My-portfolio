@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
+  </style>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="Button.css">
+  <link rel="stylesheet" href="About.css">
+  <link rel="stylesheet" href="services.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="projects.css">
+  <link rel="stylesheet" href="contact.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <div class="left">Protham's Portfolio</div>
+      <div class="right">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/">About me</a></li>
+          <li><a href="/">Contact</a></li>
+          <li><a href="/">Projects</a></li>
+          <li><a href="/">Skills</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="upperborder up-1">
+      <div id="first"> </div>
+      <section class="firstSection">
+        <div class="leftSection">
+          <h1>Hello! there</h1>
+          My name is <span class="yellow">Protham </span>
+          <div>and i am a passionate</div>
+          <div class="blue"> <span id="element"></span></div>
+          <div class="button">
+            <button class="btn">Download Resume</button>
+            <button class="btn btn-1">
+              <span class="btn-img"><img
+                  src="data:image/png;base64,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"
+                  alt=""></span>
+              Visit Github</button>
+          </div>
+        </div>
+
+        <div class="rightSection">
+          <img class="glow" src="https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_1280.jpg"
+            alt="">
+        </div>
+      </section>
+    </div>
+
+    <hr>
+    <section class="secondSection">
+
+      <h1>Work Experience</h1>
+
+
+      <span class="text-grey">what i have done so far</span>
+      <div class="box">
+        <div class="vertical">
+          <div class="horizontal ">
+            <span class="invisible"></span>
+            <div class="tenor-gif-embed" data-postid="13119327143286130176" data-share-method="host"
+              data-aspect-ratio="1" data-width="70%"><a
+                href="https://tenor.com/view/why-choose-brain-inventory-for-ecommerce-development-gif-13119327143286130176">Why
+                Choose Brain Inventory For Ecommerce Development GIF</a>from <a
+                href="https://tenor.com/search/why+choose+brain+inventory+for+ecommerce+development-gifs">Why Choose
+                Brain Inventory For Ecommerce Development GIFs</a></div>
+            <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+            <span class="h-1">
+              <h1>Business Development</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores labore nobis voluptatem.
+              </p>
+            </span>
+
+          </div>
+
+          <div class="horizontal">
+            <span><img class="img" id="orange"
+                src="assets/orange.png"
+                alt=""></span>
+
+                <span class="h-2">
+                  <h1>Orange(Start up Idea)</h1>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex fugiat sit odio.</p>
+                </span>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="upperborder">
+      <section class="abouts">
+        <div class="abt">
+          <h1 class="abt-text">About me</h1>
+          <span class="text-grey">What you should know about me</span>
+
+        </div>
+        <div class="description">
+          <div class="abt-img"><img
+              src="assets/Ami.jpg" alt="">
+          </div>
+          <div class="skills">
+            <p class="abt-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quas error ducimus corporis
+              dignissimos cum atque obcaecati, aspernatur magnam quisquam fugit, minima sit repudiandae consequatur
+              cumque harum ipsum voluptatibus distinctio reiciendis in ratione sunt quam voluptatum aliquid. Dignissimos
+              corrupti architecto voluptas sunt, inventore numquam doloribus rerum magnam ratione iure similique
+              reiciendis consequatur libero pariatur facilis tenetur a dolorum veritatis suscipit eum tempora? Quidem,
+              quasi neque ipsum esse qui expedita veritatis!</p>
+            <div class="html">
+              <p>HTML</p>
+              <hr class="hr-1">
+            </div>
+            <div class="css">
+              <p>CSS</p>
+              <hr class="hr-2">
+            </div>
+            <div class="js">
+              <p>JavaScript</p>
+              <hr class="hr-3">
+            </div>
+            <div class="react">
+              <p>React</p>
+              <hr class="hr-4">
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <hr>
+
+    <section class="service-section">
+      <div class="services">
+        <div class="services-title">
+          <h1>My Services</h1>
+          <p>What services do I provide</p>
+        </div>
+        <div class="services-container">
+          <div class="service s-1" onclick="showDescription('web-developer')">
+            <h1>Web Developer</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="service s-2" onclick="showDescription('software-developer')">
+            <h1>Software Developer</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <!-- Add more services similarly -->
+          <div class="service s-3" onclick="showDescription('software-developer')">
+            <h1>Software Developer</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="service s-4" onclick="showDescription('software-developer')">
+            <h1>Software Developer</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="service s-5" onclick="showDescription('software-developer')">
+            <h1>Software Developer</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="service s-6" onclick="showDescription('software-developer')">
+            <h1>Software Developer</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+   
+        </div>
+      </div>
+    
+      <!-- Expanded description area -->
+      <div id="description-area" class="description-area">
+        <button onclick="hideDescription()" class="close-button">Close</button>
+        <h2 id="description-title"></h2>
+        <p id="description-content"></p>
+      </div>
+    </section>
+    
+
+<div class="inv-sep" style="height: 150px; width: 100vw;
+background: transparent;">
+     <div class="head-project">
+      <h1>MY PROJECTS</h1>
+       <span>Look at some of My Projects</span> 
+      </div>
+    </div>
+
+    <section class="project">
+ 
+      <div class="carousel">
+        <!-- list item -->
+        <div class="list">
+            <div class="item">
+                <img src="assets/qr2.jpg">
+                <div class="content">
+                    <div class="author">PRATHAM'</div>
+                    <div class="title">PROJECT-1</div>
+                    <div class="topic">QR-CODER</div>
+                    <div class="des">
+                        <!-- lorem 50 -->
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+                    </div>
+                    <div class="buttons">
+                        <button>Source Code</button>
+                        <button>LIVE DEMO</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/portf2.jpg">
+                <div class="content">
+                    <div class="author">PRATHAM'</div>
+                    <div class="title">PROJECT-2</div>
+                    <div class="topic tp-2">MyPROTFOLIO</div>
+                    <div class="des">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+                    </div>
+                    <div class="buttons">
+                        <button>Source Code</button>
+                        <button>LIVE DEMO</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/nf-3.jpg">
+                <div class="content">
+                    <div class="author">PRATHAM'</div>
+                    <div class="title">PROJECT-3</div>
+                    <div class="topic TP-3">NETFLIX</div>
+                    <div class="des">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+                    </div>
+                    <div class="buttons">
+                        <button>Source Code</button>
+                        <button>LIVE DEMO</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/chat1.jpg">
+                <div class="content">
+                    <div class="author">PRATHAM'</div>
+                    <div class="title">PROJECT-4</div>
+                    <div class="topic">CHAT-APP</div>
+                    <div class="des">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+                    </div>
+                    <div class="buttons">
+                        <button>Source Code</button>
+                        <button>LIVE DEMO</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- list thumnail -->
+        <div class="thumbnail">
+            <div class="item">
+                <img src="assets/qr2.jpg">
+                <div class="content">
+                    <div class="title">
+                        QR-CODER
+                    </div>
+               
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/portf2.jpg">
+                <div class="content">
+                    <div class="title">
+                      PORTFOLIO
+                    </div>
+            
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/nf-3.jpg">
+                <div class="content">
+                    <div class="title">
+                        NETFLIX-CLONE
+                    </div>
+               
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/chat1.jpg">
+                <div class="content">
+                    <div class="title">
+                        CHAT-APP
+                    </div>
+               
+                </div>
+            </div>
+        </div>
+        <!-- next prev -->
+
+        <div class="arrows">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <!-- time running -->
+        <div class="time"></div>
+    </div>
+  </section> 
+  <section class="contact">
+    <div class="contacts">
+       <div class="contact-section">
+         <div class="contact-left">
+           <h1>Let's Talk</h1>
+           <p>I am currently available to take on new projects, so feel free to contact me regarding your Idea.</p>
+           <div class="contact-details">
+             <div class="contact-detail">
+                 <img src="assets/email2.jpg" alt="">
+                 <p>protham.dey@gmail.com</p>
+             </div>
+             <div class="contact-detail">
+                 <img src="assets/phone.jpg" alt="">
+                 <p>+91-0000000000</p>
+             </div>
+             <div class="contact-detail">
+                 <img src="assets/locarion2.jpg" alt="">
+                 <p>Kolkata,West-Bnegal</p>
+             </div>
+           </div>
+         </div>
+         
+         <form class="contact-right" method="POST" id="form">
+          <input type="hidden" name="access_key" value="0f0ad554-bcb6-479f-9317-7f5f2b0abdb5">
+
+
+
+             <label for="">Your Name</label>
+             <input type="text" placeholder="Enter your name" name="name">
+             <label for="">Your Email</label>
+             <input type="text" placeholder="Enter your Email">
+             <label for="">Write your message here</label>
+             <textarea name="message" rows="10" placeholder="Enter your message here" id=""></textarea>
+             <button type="submit" class="contact-submit">Submit Now</button>
+
+             <div id="result"></div>
+         </form>
+       </div>
+    </div>
+</section>
+  
+  </main>
+
+  <div class="inv-sep"></div>
+
+
+
+  <footer>
+    <div class="footer">
+      <div class="footer-first">
+        <h3>Protham's Developer Potfolio</h3>
+      </div>
+      <div class="footer-second">
+        <ul>
+          <li class="list">
+            <span><img class="footer-img"
+                src="data:image/png;base64,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"
+                alt=""></span>
+            <div> Instagram </div>
+          </li>
+          <li class="list" class="list">
+            <span> <img class="footer-img"
+                src="data:image/png;base64,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"
+                alt=""></span>
+            <div> Twitter (X)</div>
+          </li>
+          <li class="list">
+            <span>
+              <img
+                src="data:image/png;base64,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"
+                alt="" class="footer-img">
+            </span>
+
+            <div> Discord </div>
+          </li>
+          <li class="list">
+            <span>
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAbFBMVEX///8AAADr6+vy8vLi4uKampqqqqrBwcFwcHB6enrFxcWurq5jY2N+fn7l5eVISEgzMzOQkJAfHx8kJCROTk4MDAwpKSm2traJiYnZ2dm5ubkTExNpaWn4+PhUVFTOzs6Xl5dBQUFdXV0SEhITRx+rAAAD/ElEQVR4nO2d2XLiMBBFLRMIXsA2gSQsCcnM///jBLIgJCFFU2q1Ld/zCKa6TllYW7uVZQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgUk3LWFXXTrkQwNg/t+lB0VTnhlsuycrEJJ2Zgvyg59ZYLUrtvFksmv7yO4neizjkEu2h+J7rofvljVEEhHiPfxjKy34moj5yKQVCIKnXBiIocTfSTSA01ZxMUIs7jJvZTVOYxhmDcflAlQr/I2UZP0LfTeEM1MzW14JJZUAjqYXic2YSNBbEht98HtIJ8nf0F2m6fv5FSN9M9t94HG0rBCbfdGcrlqT78DWn/iFzTpmtmhIa8Y9JvKMemBbfcmYLQ8MAtd4ZyaLp2BX8ul3lePtMaNoSGrT3028+FU0rDltDwwRp5K115R2i4IjS0Br67upRymsVkqPZST6kZ6k3H8acdnKE+0KC7iTyG+uIC3TCdx9Dv6kQMyZaOe2NINl3mMXzxunqIhvq09JiY4UG7mG6qxWOodReEGxxMhuqIv0nOUJmYzukE2QxFc1nme3klFOQzFKL73N3L3yj9WA0/phj1vLbPk4duGAUYwhCG/MCwV4ar+bTa3e+qt7lHIjyT4dP9NZeFqFkpfy6t+TeVvNmZV+/9NlR3Zl9+vlFmHbuvjwt98Wrr3BjhNFTTsS5LbdeL4V+rjK/m9K1f7TLTyJ0JZ/h0M8afJAz3tvw7975VaC2JQIaO7TFntkBQp2sCGbrCuHZYAxqpBDGs3CmijrXkcEIaQQx/wTZ5Q8cDNYiLmWiG9psYxMVMNEP7WmQIlRvEM7xP3tAaKoDJ/4T1N5wcq1lV3ug7bOlXIZUUQhr+zJVa4wtbtiyA0FoS4Qy38gvSprcnbSlHFGpfBDNU9xYNL1EM21Dbedt7xaKRc0X1MtR7u6lPLCI7R1QfQ9P+t08sKj17VB9DU09w9IhF5hfM0PRzLWtsyIbGYbX2JsyQDXemn889YtEJBjKcmX6uZaskZ5j+PYQhDAMBQxkYwhCGNMBQBoYwhCENMJSBoYL2CjoMaYChDAxhCEMaYChDZ0hZKMqWix3P8IFO0FomIZ4hZW0TW6bSr/O8zfmj2t7T7VrvazpBa+HLbnrNpabUs/KNMVWmUS6yZArrrxyHI/06UenX+jI+I6JDWfQ6/Zp76ddNtDzC42HInwpI+vVL+/BHJC49z60nqOsI96CZUteCTr+ed/o12UdQVz/9sxFGcL7FCM4oSf+cmRGcFTSC855GcGbXCM5dy9I/Oy8bwfmHWfpnWJ4pF39J7Ta855B+Mimrrjis25Bl2lZtUxfdrA9nyQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMCHf9j+Teszvdc7AAAAAElFTkSuQmCC"
+                alt="" class="footer-img">
+            </span>
+
+            <div>Linked in</div>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-third">
+
+      </div>
+      <div class="footer-fourth">
+
+      </div>
+    </div>
+    <div class="footer-rights">Copyright &#169; www.Orange1110.com || All Rights Reserved</div>
+  </footer>
+
+
+
+
+<script src="project.js"></script>
+<script src="services.js"></script>
+
+
+
+<script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+<script>
+  const form = document.getElementById('form');
+  const result = document.getElementById('result');
+  
+  form.addEventListener('submit', function(e) {
+      const formData = new FormData(form);
+      e.preventDefault();
+  
+      const object = Object.fromEntries(formData);
+      const json = JSON.stringify(object);
+  
+      result.innerHTML = "Please wait..."
+  
+      fetch('https://api.web3forms.com/submit', {
+              method: 'POST',
+              headers: {
+                  'Content-Type': 'application/json',
+                  'Accept': 'application/json'
+              },
+              body: json
+          })
+          .then(async (response) => {
+              let json = await response.json();
+              if (response.status == 200) {
+                  alert("Email sent successfully");
+                  result.innerHTML = json.message;
+              } else {
+                  console.log(response);
+                  result.innerHTML = json.message;
+              }
+          })
+          .catch(error => {
+              console.log(error);
+              result.innerHTML = "Something went wrong!";
+          })
+          .then(function() {
+              form.reset();
+              setTimeout(() => {
+                  result.style.display = "none";
+              }, 3000);
+          });
+  });
+  </script>
+
+<!-- Load your React component -->
+<script src="app.js"></script>
+
+
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      VANTA.NET({
+        el: "#first",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        color: 0x214ede,
+        backgroundColor: 0x0,
+        points: 14.00,
+        maxDistance: 21.00,
+        spacing: 12.00
+      })
+
+
+    })
+
+  </script>
+
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+  <script>
+    var options = {
+      strings: ['Web Developer', 'Software Developer', 'SEO Manager', 'Data Scientist'],
+      typeSpeed: 50,
+      backSpeed: 25, // Optional: speed for backspacing
+      backDelay: 1000, // Optional: delay before starting to backspace
+      loop: true // Optional: to loop through the strings indefinitely
+    };
+  
+    var typed = new Typed('#element', options);
+  </script>
+  
+
+
+</body>
+
+</html>
